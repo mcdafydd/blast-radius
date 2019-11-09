@@ -30,7 +30,8 @@ cd /data-rw
 [ -d '.terraform' ] && terraform get
 
 # Reinitialize for some reason
-terraform init
+# Remove stdout to keep it from being written to docker host stdout
+terraform init > /dev/null
 
 # it's possible that we're in a sub-directory. leave.
 cd /data-rw

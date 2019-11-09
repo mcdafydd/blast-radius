@@ -13,8 +13,8 @@ with open("requirements.txt") as f:
 
 setup(
     name='blastradius',
-    version='0.1.25',
-    description='Interactive Terraform graph visualizations',
+    version='0.1.26',
+    description='Interactive Terraform 0.12 graph visualizations',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     author='Patrick McMurchie',
